@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:17
 EXPOSE 8080
-ADD target/devops-integration.jar devops-integration.jar
-ENTRYPOINT ["java","-jar","/devops-integration.jar"]
+COPY target/my1st-artifact.jar my1st-artifact.jar
+ENTRYPOINT ["java","-jar","/my1st-artifact.jar"]
